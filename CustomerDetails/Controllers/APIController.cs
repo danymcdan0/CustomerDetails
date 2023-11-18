@@ -2,7 +2,6 @@
 using CustomerDetails.Models.Domain;
 using CustomerDetails.Models.DTO;
 using CustomerDetails.Repository;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CustomerDetails.Controller
@@ -29,12 +28,25 @@ namespace CustomerDetails.Controller
             return Ok(customersDTO);
         }
 
+        [HttpGet]
+        [Route("customer/{id}")]
+        public async Task<ActionResult<CustomerDTO>> GetCustomerAsync(int id)
+        {
+            var customers = await _customerRepository.GetCustomerAsync(id);
+            var customersDTO = _mapper.Map<CustomerDTO>(customers);
+            return Ok(customersDTO);
+        }
+
         [HttpPost]
         [Route("customer")]
         public async Task<ActionResult<CustomerDTO>> CreateCustomerAsync(CustomerDTO customerDTO)
         {
             var customer = _mapper.Map<Customer>(customerDTO);
-            await _customerRepository.CreateCustomerAsync(customer);
+            var result = await _customerRepository.CreateCustomerAsync(customer);
+            if (result == null)
+            {
+                return BadRequest();
+            }
             return Ok(customerDTO);
         }
 
@@ -43,7 +55,11 @@ namespace CustomerDetails.Controller
         public async Task<ActionResult<CustomerDTO>> EditCustomerAsync([FromRoute] int id, CustomerDTO customerDTO)
         {
             var customer = _mapper.Map<Customer>(customerDTO);
-            await _customerRepository.EditCustomerAsync(id, customer);
+            var result = await _customerRepository.EditCustomerAsync(id, customer);
+            if (result == null)
+            {
+                return BadRequest();
+            }
             return Ok(customerDTO);
         }
     }

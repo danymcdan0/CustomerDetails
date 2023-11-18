@@ -40,6 +40,15 @@ namespace CustomerDetails.Repository
             }
         }
 
+        public async Task<Customer> GetCustomerAsync(int id)
+        {
+            using (var context = new CustomerDetailsContext())
+            {
+                var targetCustomer = await context.Customers.SingleOrDefaultAsync(x => x.Id == id);
+                return targetCustomer;
+            }
+        }
+
         public async Task<Customer> CreateCustomerAsync(Customer customer)
         {
             using (var context = new CustomerDetailsContext())

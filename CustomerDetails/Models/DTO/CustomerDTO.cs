@@ -5,6 +5,8 @@ namespace CustomerDetails.Models.DTO
 {
     public class CustomerDTO
     {
+        public int Id { get; set; }
+
         [MinLength(1)]
         [MaxLength(50)]
         [Required(ErrorMessage = "Name is required")]
