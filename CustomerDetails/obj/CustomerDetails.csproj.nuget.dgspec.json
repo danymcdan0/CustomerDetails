@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\danya\\source\\repos\\ArdonaghProgrammingTest\\CustomerDetails\\CustomerDetails.csproj": {}
+    "C:\\Users\\danya\\source\\repos\\Ardonagh\\ArdonaghProgrammingTest\\CustomerDetails\\CustomerDetails.csproj": {}
   },
   "projects": {
-    "C:\\Users\\danya\\source\\repos\\ArdonaghProgrammingTest\\CustomerDetails\\CustomerDetails.csproj": {
+    "C:\\Users\\danya\\source\\repos\\Ardonagh\\ArdonaghProgrammingTest\\CustomerDetails\\CustomerDetails.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\danya\\source\\repos\\ArdonaghProgrammingTest\\CustomerDetails\\CustomerDetails.csproj",
+        "projectUniqueName": "C:\\Users\\danya\\source\\repos\\Ardonagh\\ArdonaghProgrammingTest\\CustomerDetails\\CustomerDetails.csproj",
         "projectName": "CustomerDetails",
-        "projectPath": "C:\\Users\\danya\\source\\repos\\ArdonaghProgrammingTest\\CustomerDetails\\CustomerDetails.csproj",
+        "projectPath": "C:\\Users\\danya\\source\\repos\\Ardonagh\\ArdonaghProgrammingTest\\CustomerDetails\\CustomerDetails.csproj",
         "packagesPath": "C:\\Users\\danya\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\danya\\source\\repos\\ArdonaghProgrammingTest\\CustomerDetails\\obj\\",
+        "outputPath": "C:\\Users\\danya\\source\\repos\\Ardonagh\\ArdonaghProgrammingTest\\CustomerDetails\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\danya\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,34 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
