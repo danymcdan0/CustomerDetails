@@ -13,6 +13,7 @@ The extra GET endpoint (/api/customer/{id}) was implemented for the Web app to b
 
 There was a use of DTOs, ViewModels with an Automapper to be able to convert between different objects.
 Further the repository pattern was implemented to handle all of the inmemory database calls, separating concerns of the logic and end points.
+Razor pages were used to view the web app and swagger was used to view the API side.
 
 # Issues found:
 - The validation currently only works on the API side, informing where the user made an error in the response. There are no validation messages given to the user on the Web App side, but if anything is entered wrong the API does not make the users changes to its database.
@@ -24,3 +25,4 @@ Further the repository pattern was implemented to handle all of the inmemory dat
 - Error handling (Focused on working code with functionality first hence no time to implement).
 - Validation on the Web App side with dialogue.
 - Adding cancel buttons for the edit and create pages (simple fix, just outside the timeframe).
+- Adding seed data to have some pre-existing data.
