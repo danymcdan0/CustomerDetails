@@ -16,6 +16,8 @@ namespace CustomerDetails
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
+            builder.Services.AddAutoMapper(typeof(AutoMapperProfile));
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

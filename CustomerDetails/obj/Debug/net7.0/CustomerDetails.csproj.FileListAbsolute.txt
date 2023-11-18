@@ -40,3 +40,5 @@ C:\Users\danya\source\repos\Ardonagh\ArdonaghProgrammingTest\CustomerDetails\obj
 C:\Users\danya\source\repos\Ardonagh\ArdonaghProgrammingTest\CustomerDetails\obj\Debug\net7.0\CustomerDetails.pdb
 C:\Users\danya\source\repos\Ardonagh\ArdonaghProgrammingTest\CustomerDetails\obj\Debug\net7.0\CustomerDetails.genruntimeconfig.cache
 C:\Users\danya\source\repos\Ardonagh\ArdonaghProgrammingTest\CustomerDetails\obj\Debug\net7.0\ref\CustomerDetails.dll
+C:\Users\danya\source\repos\Ardonagh\ArdonaghProgrammingTest\CustomerDetails\bin\Debug\net7.0\AutoMapper.dll
+C:\Users\danya\source\repos\Ardonagh\ArdonaghProgrammingTest\CustomerDetails\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
