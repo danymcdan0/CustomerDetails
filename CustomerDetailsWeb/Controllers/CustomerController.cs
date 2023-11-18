@@ -64,7 +64,7 @@ namespace CustomerDetailsWeb.Controllers
             return View(response);
         }
 
-        [HttpPut]
+        [HttpPost]
         public async Task<IActionResult> Edit(CustomerDTO customerDTO)
         {
             var httpRequestMessage = new HttpRequestMessage()
